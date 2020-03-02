@@ -4,7 +4,7 @@ function buildchart (){
         var samples = data.samples;
 
         metadata.forEach((x) => {
-            var data = d3.select("#selDataset").append("p");
+            var data = d3.select("#selDataset").append("option");
             data.text(`${x.id}`).attr("value", `${x.id}`);
         }) 
 
